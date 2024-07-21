@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+/**************************   NAVBAR  ***********************************/
+
+.navbar {
+  opacity: 0.9;
+}
+
+
+/**************************   HERO SECTION  ***********************************/
+.hero {
+  min-height: 100vh;
+  /*Set minimum height to 100vh for responsiveness */
+  background-image: url("/images/Hero-img.png");
+  /* Set background image */
+  background-size: cover;
+  /* Resize image to cover container */
+  background-position: center;
+  /* Center image horizontally and vertically */
+  display: flex;
+  /* Enable vertical stacking of text and image */
+  align-items: center;
+  /* Vertically center content */
+  justify-content: flex-end;
+  /* Horizontally center content */
+  text-align: center;
+  /* Center text within hero section */
+}
+
+.hero-text {
+  color: white;
+  /* Set text color to white */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Add a slight shadow for readability */
+  z-index: 1;
+}
+
+
+
+/**************************  SERVICES SECTION  ***********************************/
+
+
+/* section{
+    background-color: #FFFFFF;
+    height: 768px;
+    width: 100%;
+} */
+h3 {
+  align-items: center;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+}
+
+/**************************   TESTIMONIALS SECTION  ***********************************/
+
+.Testimonials{
+  width: 100%;
+  /* height: 100vh; */
+  background-color: rgb(225,215,213);
+  position: relative;
+  padding-bottom: 100px;
+  font-family: Oswald, sans-serif;
+}  
+
+.section-heading{
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-transform: capitalize;
+  color: #dee2e6;
+}
+
+.carousel-item{
+  min-height: 500px;
+  position: relative;
+
+}
+
+.carousel-img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #3f3b3b;
+}
+
+.carousel-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50% ;
+}
+
+.carousel-caption{
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  bottom: 50px;
+  padding: 50px 0;
+  color: black;
+}
+
+.testimonial-name{
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.testimonial-icon{
+  font-size: 40px;
+  color: black;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+/* media query for testimonial */
+@media (max-width: 576px) {
+  .carousel-img {
+    width: 80px; 
+    height: 80px;
+    top: 20%; 
+  }
+}
+
+/**************************   PACKAGES SECTION  ***********************************/
+
+
+/**************************   ABOUT SECTION     *****************************/
+.about-section {
+  background-color: #f2f2f2;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 20rem;
+}
+
+.contact-info ul li i {
+  color: #88d9f7;
+}
+
+.contact-info ul li span {
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+  .map-container,
+  .contact-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+
+  .contact-info ul li {
+    margin: 0rem 0rem 0rem 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info ul li span {
+    display: none;
+  }
+}
+
+
+/**************************   Media Query  ***********************************/
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (min-width: 576px) {
+  .hero-text {
+    font-size: 1rem;
+    /* Adjust font size for even smaller screens */
+  }
+}
+
+
+
+
+/******************************** extra css ***************************/
+
+
+/* .testimonial-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.client-info {
+  font-size: 14px;
+  color: #888;
+} */
+
+
+
+/* .services {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+}
+
+.packages {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+} */
+
+.packages-title {
+  /* align-items: center; */
+  background-color: #1777A1;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+div .p-card-header {
+  background-color: #62A2C4;
+  font-size: 20px;
+}
+
+/* .price-container {
+    height: 80px;
+    width: 322.5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container-mobile {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.price .currency {
+  position: relative;
+  color: #505050;
+  font-size: 25px;
+}
+
+.price .integer-part {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.price-without-decimal {
+  font-size: 12px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.carousel-control-prev-icon {
+  /* background-image: url("Images/arrow-left.png"); */
+  border: solid black 0;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+  border: solid black 0;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+/* @media (max-width:768px) {
+    .services {
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .packages {
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .price-container {
+        height: 70px;
+    }
+
+
+} */
+
+
+
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin: 20px 0px 20px 0px;
+}
+
+.btn {
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.text-muted {
+  color: #888;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #888;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
